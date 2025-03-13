@@ -8,9 +8,14 @@ public class snowman : MonoBehaviour
     private float rotationSpeed = 100.0f;
 
     float translation = 0, rotation = 0;
+    public GameObject[] snowball;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        snowball = GameObject.FindGameObjectsWithTag("snowball");
+    }
+
     void Start()
     {
         
@@ -43,5 +48,23 @@ public class snowman : MonoBehaviour
         {
             transform.Rotate(0, rotation, 0);
         }
+        Vector2 targetPosition = transform.position;
+
+        foreach (GameObject snowball in snowball)
+        {
+            if (snowball != null) 
+            {
+                snowball.transform.position = Vector2.MoveTowards(snowball.transform.position, targetPosition, (speed / 5) * Time.deltaTime);
+            }
+        }
     }
+    
+    void OnTriggerEnter2D (Collider2D obj){
+        if (obj.CompareTag("Balloon"))
+        {
+            Destroy(obj.gameObject);
+        }
+ 
+    }
+
 }
