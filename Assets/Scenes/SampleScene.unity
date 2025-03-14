@@ -887,6 +887,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1746903372}
+    - target: {fileID: 739483575004700476, guid: 130d8daf83ad8ba4e835dd7260eb3b1e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2801730169175691914, guid: 130d8daf83ad8ba4e835dd7260eb3b1e, type: 3}
       propertyPath: m_Name
       value: snowman
@@ -1165,7 +1169,7 @@ PrefabInstance:
       objectReference: {fileID: 1516926346}
     - target: {fileID: 1547931859492732271, guid: cc20ba3627d73de41a9bc805ee1cc52b, type: 3}
       propertyPath: m_VersionIndex
-      value: 18
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2375014010431811432, guid: cc20ba3627d73de41a9bc805ee1cc52b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1221,7 +1225,7 @@ PrefabInstance:
       objectReference: {fileID: 1870678491}
     - target: {fileID: 7039260821247778682, guid: cc20ba3627d73de41a9bc805ee1cc52b, type: 3}
       propertyPath: m_VersionIndex
-      value: 30
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 8925484412460288127, guid: cc20ba3627d73de41a9bc805ee1cc52b, type: 3}
       propertyPath: m_Name

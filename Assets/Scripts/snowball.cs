@@ -14,7 +14,6 @@ public class Snowball : MonoBehaviour
     {
         render = GetComponent<Renderer>();
         collider = GetComponent<Collider2D>();
-
         if (spawn != null)
         {
             startPos = spawn.position;
@@ -26,7 +25,6 @@ public class Snowball : MonoBehaviour
     }
     private void Start()
     {
-      
         StartCoroutine(SnowballLifeCycle());
     }
 
@@ -72,7 +70,6 @@ public class Snowball : MonoBehaviour
 
         if (collider != null) collider.enabled = true;
 
-        hidden = false;
-    
+        hidden = false;   
     }
 }

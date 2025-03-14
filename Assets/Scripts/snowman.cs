@@ -9,8 +9,6 @@ public class snowman : MonoBehaviour
 
     float translation = 0, rotation = 0;
     public GameObject[] snowball;
-
-
     private void Awake()
     {
         snowball = GameObject.FindGameObjectsWithTag("snowball");
@@ -21,12 +19,11 @@ public class snowman : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    //called once per frame
     void Update()
     {
         translation = speed * Time.deltaTime;
         rotation = rotationSpeed * Time.deltaTime;
-
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position = new Vector2(transform.position.x, transform.position.y) + new Vector2(-translation, 0);        
@@ -43,7 +40,6 @@ public class snowman : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, transform.position.y) + new Vector2(0, -translation);
         }
-
         if (Input.GetKey(KeyCode.Space))
         {
             transform.Rotate(0, rotation, 0);
